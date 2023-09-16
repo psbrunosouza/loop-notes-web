@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
+    "strictPropertyInitialization": false,
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
@@ -14,7 +15,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@arbol-org/majoris-ui": ["libs/majoris-ui/src/index.ts"],
+      "@arbol-org/resources": ["libs/resources/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

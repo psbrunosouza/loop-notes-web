@@ -1,0 +1,51 @@
+{
+  "name": "resources",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/resources/src",
+  "prefix": "arbol-org",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/resources/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/resources/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/resources/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/resources/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/resources/**/*.ts",
+          "libs/resources/**/*.html",
+          "libs/resources/package.json"
+        ]
+      }
+    }
+  }
+}

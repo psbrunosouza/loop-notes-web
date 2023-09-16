@@ -1,0 +1,23 @@
+<mjs-card
+  *ngFor="let iteration of iterations!"
+  [title]="iterations ? iteration.tasks[iterations.length - 1].name : ''"
+>
+  <div body class="flex flex-col gap-2">
+    <p class="text-content/50">
+      {{iterations ? iteration.tasks[iterations.length - 1].description : ''}}
+    </p>
+<!--    <mjs-checkbox ></mjs-checkbox>-->
+<!--    <mjs-checkbox></mjs-checkbox>-->
+  </div>
+  <div class="flex justify-between w-full" footer>
+    <div class="flex items-center gap-2">
+      <span class="material-icons text-primary">calendar_today</span>
+      <span class="text-content/50">{{iterations ?  (iteration.tasks[iterations.length - 1].createdAt | date: 'EEEE, MMMM d, y') : '' }}</span>
+    </div>
+    <div class="flex gap-2">
+      <span class="material-icons text-xl text-danger">favorite</span>
+      <span class="material-icons text-xl text-primary"
+      >local_fire_department</span>
+    </div>
+  </div>
+</mjs-card>

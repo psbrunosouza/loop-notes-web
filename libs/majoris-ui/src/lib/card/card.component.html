@@ -1,0 +1,16 @@
+<div class="card bg-secondary p-4 rounded-md flex flex-col gap-4 h-min-[84px]">
+  <div class="card__header flex justify-between">
+    <div>
+      <span class="text-content font-bold">{{ title }}</span>
+    </div>
+    <div>
+      <span class="material-icons text-primary">more_horiz</span>
+    </div>
+  </div>
+  <div>
+    <ng-content select="[body]"></ng-content>
+  </div>
+  <div class="flex justify-between">
+    <ng-content select="[footer]"></ng-content>
+  </div>
+</div>
