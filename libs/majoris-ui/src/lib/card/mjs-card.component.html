@@ -1,0 +1,18 @@
+<div
+  #card
+  [ngClass]="[backgroundClass, borderClass, borderRadiusClass]"
+  class="mjs-card"
+>
+  <div>
+    <ng-content select="mjs-card-header">
+    </ng-content>
+  </div>
+  <div>
+    <ng-content select="mjs-card-body">
+    </ng-content>
+  </div>
+  <div>
+    <ng-content select="mjs-card-footer">
+    </ng-content>
+  </div>
+</div>

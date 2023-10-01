@@ -1,23 +1,74 @@
-<mjs-card
-  *ngFor="let iteration of iterations!"
-  [title]="iterations ? iteration.tasks[iterations.length - 1].name : ''"
->
-  <div body class="flex flex-col gap-2">
-    <p class="text-content/50">
-      {{iterations ? iteration.tasks[iterations.length - 1].description : ''}}
-    </p>
-<!--    <mjs-checkbox ></mjs-checkbox>-->
-<!--    <mjs-checkbox></mjs-checkbox>-->
-  </div>
-  <div class="flex justify-between w-full" footer>
+<!--<mjs-card-->
+<!--  *ngFor="let iteration of iterations!"-->
+<!--  [title]="iterations ? iteration.tasks[iterations.length - 1].name : ''"-->
+<!--&gt;-->
+<!--  <div body class="flex flex-col gap-2">-->
+<!--    <p class="text-content/50">-->
+<!--      {{iterations ? iteration.tasks[iterations.length - 1].description : ''}}-->
+<!--    </p>-->
+<!--&lt;!&ndash;    <mjs-checkbox ></mjs-checkbox>&ndash;&gt;-->
+<!--&lt;!&ndash;    <mjs-checkbox></mjs-checkbox>&ndash;&gt;-->
+<!--  </div>-->
+<!--  <div class="flex justify-between w-full" footer>-->
+<!--    <div class="flex items-center gap-2">-->
+<!--      <span class="material-icons text-primary">calendar_today</span>-->
+<!--      <span class="text-content/50">{{iterations ?  (iteration.tasks[iterations.length - 1].createdAt | date: 'EEEE, MMMM d, y') : '' }}</span>-->
+<!--    </div>-->
+<!--    <div class="flex gap-2">-->
+<!--      <span class="material-icons text-xl text-danger">favorite</span>-->
+<!--      <span class="material-icons text-xl text-primary"-->
+<!--      >local_fire_department</span>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</mjs-card>-->
+
+<mjs-card background="bg-secondary" borderRadius="rounded-md">
+  <mjs-card-header position="between">
+    <div>
+      <span class="font-bold">teste</span>
+    </div>
+    <span class="material-icons text-primary">more_horiz</span>
+  </mjs-card-header>
+  <mjs-card-body maxHeight="240px">
+    BOM DMS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+    deserunt dolores est eveniet incidunt iste laborum natus temporibus tenetur
+    velit? A accusamus, animi atque laborum molestiae odit repellendus sequi
+    voluptates.
+    BOM DMS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+    deserunt dolores est eveniet incidunt iste laborum natus temporibus tenetur
+    velit? A accusamus, animi atque laborum molestiae odit repellendus sequi
+    voluptates.
+    BOM DMS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+    deserunt dolores est eveniet incidunt iste laborum natus temporibus tenetur
+    velit? A accusamus, animi atque laborum molestiae odit repellendus sequi
+    voluptates.
+    BOM DMS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+    deserunt dolores est eveniet incidunt iste laborum natus temporibus tenetur
+    velit? A accusamus, animi atque laborum molestiae odit repellendus sequi
+    voluptates.
+    BOM DMS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+    deserunt dolores est eveniet incidunt iste laborum natus temporibus tenetur
+    velit? A accusamus, animi atque laborum molestiae odit repellendus sequi
+    voluptates.
+    BOM DMS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+    deserunt dolores est eveniet incidunt iste laborum natus temporibus tenetur
+    velit? A accusamus, animi atque laborum molestiae odit repellendus sequi
+    voluptates.
+    BOM DMS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+    deserunt dolores est eveniet incidunt iste laborum natus temporibus tenetur
+    velit? A accusamus, animi atque laborum molestiae odit repellendus sequi
+    voluptates.
+  </mjs-card-body>
+  <mjs-card-footer position="between">
     <div class="flex items-center gap-2">
       <span class="material-icons text-primary">calendar_today</span>
-      <span class="text-content/50">{{iterations ?  (iteration.tasks[iterations.length - 1].createdAt | date: 'EEEE, MMMM d, y') : '' }}</span>
+      <span> BOM DMS </span>
     </div>
-    <div class="flex gap-2">
+    <div>
       <span class="material-icons text-xl text-danger">favorite</span>
       <span class="material-icons text-xl text-primary"
-      >local_fire_department</span>
+        >local_fire_department</span
+      >
     </div>
-  </div>
+  </mjs-card-footer>
 </mjs-card>
