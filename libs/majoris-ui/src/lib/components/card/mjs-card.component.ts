@@ -75,4 +75,8 @@ export class MjsCardComponent implements AfterViewInit {
   get borderRadiusClass(): string {
     return `${this.borderRadius}`;
   }
+
+  get classes(): string {
+    return `${this.backgroundClass} ${this.borderClass} ${this.borderRadiusClass}`;
+  }
 }

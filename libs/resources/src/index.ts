@@ -1,5 +1,3 @@
-export * from './lib/models/default';
-export * from './lib/models/iteration';
-export * from './lib/models/task';
-export * from './lib/services/interations.service';
+export * from './lib/services';
 export * from './lib/helpers';
+export * from './lib/models';

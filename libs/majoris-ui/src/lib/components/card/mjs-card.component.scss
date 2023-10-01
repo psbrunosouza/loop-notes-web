@@ -1,0 +1,13 @@
+@import "../../majoris-styles.css";
+
+.mjs-card {
+  @apply p-4;
+  @apply flex;
+  @apply flex-col;
+  @apply gap-2;
+  @apply min-h-[84px];
+  @apply hover:brightness-[105%];
+  @apply transition duration-300 ease-in;
+}
+
+
