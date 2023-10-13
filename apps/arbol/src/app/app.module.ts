@@ -14,8 +14,9 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
     MenuComponent,
     HeaderComponent,
+    MenuComponent,
+    HeaderComponent,
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,0 +1,60 @@
+.mjs__button {
+  @apply cursor-pointer;
+  @apply h-lg;
+  @apply px-md;
+  @apply rounded-md;
+}
+
+.mjs__button--disabled {
+  @apply cursor-not-allowed;
+}
+
+.mjs__button--loading {
+  @apply pointer-events-none;
+  @apply cursor-default;
+}
+
+.mjs__button--primary {
+  @apply bg-primary-default;
+  @apply text-primary-content;
+}
+
+.mjs__button--secondary {
+  @apply bg-secondary-default;
+  @apply text-secondary-content;
+}
+
+.mjs__button--accent {
+  @apply bg-accent-default;
+  @apply text-accent-content;
+}
+
+.mjs__button--success {
+  @apply bg-success-default;
+  @apply text-success-content;
+}
+
+.mjs__button--warning {
+  @apply bg-warning-default;
+  @apply text-warning-content;
+}
+
+.mjs__button--info {
+  @apply bg-info-default;
+  @apply text-info-content;
+}
+
+.mjs__button--danger {
+  @apply bg-danger-default;
+  @apply text-danger-content;
+}
+
+.mjs__button--light {
+  @apply bg-light-default;
+  @apply text-light-content;
+}
+
+.mjs__button--dark {
+  @apply bg-dark-default;
+  @apply text-dark-content;
+}

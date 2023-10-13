@@ -3,16 +3,18 @@
   [ngClass]="[classes]"
   class="mjs-card ripple-parent"
 >
-  <div>
+  <div class="mjs-card-header">
     <ng-content select="mjs-card-header">
     </ng-content>
   </div>
-  <div>
+  <div class="mjs-card-body" >
     <ng-content select="mjs-card-body">
     </ng-content>
   </div>
-  <div>
+  <div class="mjs-card-footer">
     <ng-content select="mjs-card-footer">
     </ng-content>
   </div>
 </div>
+
+

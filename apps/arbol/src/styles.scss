@@ -10,6 +10,32 @@
   margin: 0;
 }
 
-body{
-  @apply bg-base;
+body {
+  @apply bg-base-default;
+  scrollbar-width: thin;
+  scrollbar-color: #4F4CCF rgba(79, 76, 207, 0.3);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #4F4CCF;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4F4CCF;
+  border-radius: 20px;
+  border: 3px solid rgba(79, 76, 207, 0.3);
+}
+
+::-moz-selection {
+  @apply text-light-default;
+  @apply bg-primary-default/50;
+}
+
+::selection {
+  @apply text-light-default;
+  @apply bg-primary-default/50;
 }

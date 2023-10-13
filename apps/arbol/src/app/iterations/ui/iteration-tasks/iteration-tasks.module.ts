@@ -6,9 +6,10 @@ import {
   MjsCardBodyComponent,
   MjsCardComponent,
   MjsCardFooterComponent,
+  MjsCardHeaderComponent,
   RippleDirective,
 } from '@arbol-org/majoris-ui';
-import { MjsCardHeaderComponent } from '@arbol-org/majoris-ui';
+import { ButtonComponent } from '../../../../../../../libs/majoris-ui/src/lib/components/button/button.component';
 
 @NgModule({
   declarations: [IterationTasksComponent],
@@ -21,6 +22,7 @@ import { MjsCardHeaderComponent } from '@arbol-org/majoris-ui';
     MjsCardFooterComponent,
     MjsCardBodyComponent,
     RippleDirective,
+    ButtonComponent,
   ],
 })
 export class IterationTasksModule {}

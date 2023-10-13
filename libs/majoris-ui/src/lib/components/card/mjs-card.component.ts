@@ -5,6 +5,7 @@ import {
   ViewChild,
   ElementRef,
   AfterViewInit,
+  booleanAttribute,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CheckboxComponent } from '../checkbox/checkbox.component';
@@ -58,6 +59,8 @@ export class MjsCardComponent implements AfterViewInit {
 
   @Input() borderRadius: BorderRadiusSchema = 'rounded-md';
 
+  @Input({ transform: booleanAttribute }) clickable = false;
+
   @ViewChild('card') card: ElementRef<HTMLDivElement>;
 
   ngAfterViewInit(): void {
@@ -76,7 +79,11 @@ export class MjsCardComponent implements AfterViewInit {
     return `${this.borderRadius}`;
   }
 
+  get clickableClass(): string {
+    return this.clickable ? `cursor-pointer` : '';
+  }
+
   get classes(): string {
-    return `${this.backgroundClass} ${this.borderClass} ${this.borderRadiusClass}`;
+    return `${this.backgroundClass} ${this.borderClass} ${this.borderRadiusClass} ${this.clickableClass}`;
   }
 }

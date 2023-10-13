@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Input,
+  numberAttribute,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,16 +15,7 @@ import { CommonModule } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MjsCardBodyComponent {
-  @Input() class: string;
+  @Input() class = '';
 
-  @Input() maxHeight: string;
-
-  get maxHeightClass(): string {
-    return `max-h-[${this.maxHeight}]`;
-  }
-
-  get overflowClass(): string {
-    if (!this.maxHeight) return '';
-    return `overflow-y-auto`;
-  }
+  @Input({ transform: numberAttribute }) maxHeight: number;
 }

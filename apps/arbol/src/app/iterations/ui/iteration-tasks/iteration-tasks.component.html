@@ -22,18 +22,17 @@
 <!--  </div>-->
 <!--</mjs-card>-->
 
-<mjs-card mjsRipple background="bg-secondary" borderRadius="rounded-md">
+<mjs-card mjsRipple clickable background="bg-secondary" borderRadius="rounded-md">
   <mjs-card-header position="between">
     <div>
       <p class="font-bold">teste</p>
     </div>
-    <span class="material-icons text-primary">more_horiz</span>
+    <div>
+      <span class="material-icons text-primary">more_horiz</span>
+    </div>
   </mjs-card-header>
-  <mjs-card-body maxHeight="240px">
-    BOM DMS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-    deserunt dolores est eveniet incidunt iste laborum natus temporibus tenetur
-    velit? A accusamus, animi atque laborum molestiae odit repellendus sequi
-    voluptates.
+  <mjs-card-body [maxHeight]="240">
+    <mjs-button background="accent">teste</mjs-button>
   </mjs-card-body>
   <mjs-card-footer position="between">
     <div class="flex items-center gap-2">

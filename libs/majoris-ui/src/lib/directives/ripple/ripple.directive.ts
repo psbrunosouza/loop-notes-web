@@ -32,6 +32,6 @@ export class RippleDirective {
         this.el.nativeElement.querySelector('.ripple-parent'),
         ripple
       );
-    }, 1000);
+    }, 1500);
   }
 }

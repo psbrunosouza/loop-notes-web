@@ -1,0 +1,19 @@
+.mjs-card-footer {
+  @apply flex items-center min-h-[52px] px-4;
+}
+
+.position-class-start {
+  @apply justify-start;
+}
+
+.position-class-end {
+  @apply justify-end;
+}
+
+.position-class-center {
+  @apply justify-center;
+}
+
+.position-class-between {
+  @apply justify-between;
+}

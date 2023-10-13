@@ -1,4 +1,9 @@
-<div [class]="class" [ngClass]="[maxHeightClass, overflowClass]">
+<div
+  [style]="{
+    maxHeight: maxHeight + 'px',
+    overflowY: maxHeight ? 'auto' : 'hidden'
+  }"
+  [class]="'p-4 ' + class"
+>
   <ng-content></ng-content>
 </div>
-

@@ -1,0 +1,9 @@
+<button [ngClass]="[classes]" [disabled]="disabled" (click)="_click()" class="mjs__button">
+  <div *ngIf="!loading; else loadingRef">
+    <ng-content></ng-content>
+  </div>
+</button>
+
+<ng-template #loadingRef>
+  <span>loading...</span>
+</ng-template>

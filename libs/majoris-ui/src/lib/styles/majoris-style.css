@@ -1,0 +1,28 @@
+.ripple-parent {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 860px) {
+  .ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple-animation 1500ms linear;
+    background-color: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 861px) {
+  .ripple {
+    display: none;
+  }
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}

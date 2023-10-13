@@ -12,9 +12,9 @@ import { CommonModule } from '@angular/common';
 export class MjsCardFooterComponent {
   @Input() position: 'start' | 'end' | 'center' | 'between' = 'start';
 
-  @Input() class: string;
+  @Input() class = '';
 
   get positionClass(): string {
-    return `justify-${this.position}`;
+    return `position-class-${this.position}`;
   }
 }
